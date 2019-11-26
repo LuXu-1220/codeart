@@ -30,18 +30,18 @@ function draw() {
   background(img1,0,0);
   image(cloud, xpos, 80);
   image(img2,mouseX,mouseY);
-  
+
   if (xpos > width) {
-    
+
     xspeed = -1;
   }
-    
+
   if (xpos< 0){
-    
+
     xspeed = 1;
   }
     xpos += xspeed;
-    
+
   if(mouseIsPressed){
     image(img4,170,205);
   }
@@ -55,6 +55,5 @@ image(img2, mouseX,mouseY);
   else{image(img3,20,20);
         }
 image(img2, mouseX,mouseY);
-  
-}
 
+}
